@@ -13,16 +13,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6940c94-bac7-4ebd-a8eb-e2ba96975f0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/CommandsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/ICommanderRepo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/MockCommanderRepo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Command.cs" afterDir="false" />
+    <list default="true" id="e6940c94-bac7-4ebd-a8eb-e2ba96975f0f" name="Default Changelist" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/Controllers/CommandContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/SqlCommanderRepo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20200909102042_InitialMigration.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20200909102042_InitialMigration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/CommandContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Command.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +40,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Models/Command.cs" />
         <option value="$PROJECT_DIR$/Data/ICommanderRepo.cs" />
         <option value="$PROJECT_DIR$/Data/MockCommanderRepo.cs" />
         <option value="$PROJECT_DIR$/Controllers/CommandsController.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Controllers/CommandContext.cs" />
+        <option value="$PROJECT_DIR$/Models/Command.cs" />
+        <option value="$PROJECT_DIR$/Data/SqlCommanderRepo.cs" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/appsettings.json" />
       </list>
     </option>
   </component>
@@ -54,6 +64,8 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication">
     <configuration name="WebApplication" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -100,8 +112,19 @@
       <workItem from="1599626840630" duration="1451000" />
       <workItem from="1599628746514" duration="21000" />
       <workItem from="1599628814946" duration="535000" />
-      <workItem from="1599637699393" duration="601000" />
+      <workItem from="1599637699393" duration="1347000" />
+      <workItem from="1599640837508" duration="3727000" />
+      <workItem from="1599645671510" duration="692000" />
+      <workItem from="1599650646920" duration="2113000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1599638836554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599638836554</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,27 +146,41 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1874" height="256" key="GridCell.Tab.0.bottom" timestamp="1599628335609">
+    <state width="1874" height="256" key="GridCell.Tab.0.bottom" timestamp="1599638685656">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1874" height="256" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1599628335609" />
-    <state width="1874" height="256" key="GridCell.Tab.0.center" timestamp="1599628335608">
+    <state width="1874" height="256" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1599638685656" />
+    <state width="1874" height="256" key="GridCell.Tab.0.center" timestamp="1599638685655">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1874" height="256" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1599628335608" />
-    <state width="1874" height="256" key="GridCell.Tab.0.left" timestamp="1599628335607">
+    <state width="1874" height="256" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1599638685655" />
+    <state width="1874" height="256" key="GridCell.Tab.0.left" timestamp="1599638685655">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1874" height="256" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1599628335607" />
-    <state width="1874" height="256" key="GridCell.Tab.0.right" timestamp="1599628335608">
+    <state width="1874" height="256" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1599638685655" />
+    <state width="1874" height="256" key="GridCell.Tab.0.right" timestamp="1599638685656">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1874" height="256" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1599628335608" />
-    <state x="735" y="174" width="440" height="770" key="RiderGenerateDialog" timestamp="1599627197438">
+    <state width="1874" height="256" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1599638685656" />
+    <state x="735" y="174" width="440" height="770" key="RiderGenerateDialog" timestamp="1599645263049">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="735" y="174" width="440" height="770" key="RiderGenerateDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1599627197438" />
+    <state x="735" y="174" width="440" height="770" key="RiderGenerateDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1599645263049" />
+    <state x="441" y="195" key="SettingsEditor" timestamp="1599643080036">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="441" y="195" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1599643080036" />
+    <state x="100" y="140" width="1720" height="840" key="VCS.FileHistoryDialog" timestamp="1599642141774">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="100" y="140" width="1720" height="840" key="VCS.FileHistoryDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1599642141774" />
+    <state x="636" y="335" width="672" height="678" key="search.everywhere.popup" timestamp="1599645235921">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="636" y="335" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1599645235921" />
   </component>
 </project>

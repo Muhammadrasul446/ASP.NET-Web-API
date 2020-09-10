@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace WebApplication.DTOs
 {
-    public class CommandCreateDto
+    public class CommandUpdateDto
     {
         [Required]
         [MaxLength(250)]
@@ -15,7 +15,7 @@ namespace WebApplication.DTOs
         [Required]
         public string Platform { get; set; }
 
-        public CommandCreateDto(IFormCollection data)
+        public void SetValues(IFormCollection data)
         {
             HowTo = data["how_to"];
             Line = data["line"];

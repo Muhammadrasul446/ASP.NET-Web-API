@@ -8,8 +8,9 @@ namespace WebApplication.Data
         bool SaveChanges();
         
         IEnumerable<Command> GetAllCommands();
-        Command GetCommandsById(int id);
+        Command GetCommandById(int id);
 
         void CreateCommand(Command command);
+        void UpdateCommand(Command command);
     }
 }

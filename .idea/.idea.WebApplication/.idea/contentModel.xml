@@ -11,6 +11,7 @@
       <e p="DTOs" t="Include">
         <e p="CommandCreateDto.cs" t="Include" />
         <e p="CommandReadDto.cs" t="Include" />
+        <e p="CommandUpdateDto.cs" t="Include" />
       </e>
       <e p="Data" t="Include">
         <e p="CommandContext.cs" t="Include" />

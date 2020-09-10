@@ -25,7 +25,7 @@ namespace WebApplication.Data
             return _context.Commands.ToList();
         }
 
-        public Command GetCommandsById(int id)
+        public Command GetCommandById(int id)
         {
             return _context.Commands.FirstOrDefault(p => p.Id == id);
         }
@@ -38,6 +38,11 @@ namespace WebApplication.Data
             }
 
             _context.Commands.Add(command);
+        }
+
+        public void UpdateCommand(Command command)
+        {
+            // Nothing
         }
     }
 }

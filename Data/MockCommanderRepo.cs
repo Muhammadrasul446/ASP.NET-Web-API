@@ -22,12 +22,17 @@ namespace WebApplication.Data
             return commands;
         }
 
-        public Command GetCommandsById(int id)
+        public Command GetCommandById(int id)
         {
             return new Command() {Id = 1, HowTo = "Stash the changes in a git repository", Line = "Stash", Platform = "Terminal"};
         }
 
         public void CreateCommand(Command command)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void UpdateCommand(Command command)
         {
             throw new System.NotImplementedException();
         }

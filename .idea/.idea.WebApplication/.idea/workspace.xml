@@ -14,18 +14,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6940c94-bac7-4ebd-a8eb-e2ba96975f0f" name="Default Changelist" comment="Add POST api">
-      <change afterPath="$PROJECT_DIR$/DTOs/CommandCreateDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DTOs/CommandReadDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiles/CommandsProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/CommandUpdateDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/CommandContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/CommandContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/CommandsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CommandsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DTOs/CommandCreateDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DTOs/CommandCreateDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/ICommanderRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ICommanderRepo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/MockCommanderRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/MockCommanderRepo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/SqlCommanderRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/SqlCommanderRepo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Migrations/20200909102042_InitialMigration.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/20200909102042_InitialMigration.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Migrations/CommandContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/CommandContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Profiles/CommandsProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Profiles/CommandsProfile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication.csproj" afterDir="false" />
     </list>
@@ -44,16 +41,17 @@
         <option value="$PROJECT_DIR$/Controllers/CommandContext.cs" />
         <option value="$PROJECT_DIR$/Models/Command.cs" />
         <option value="$PROJECT_DIR$/appsettings.json" />
-        <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/DTOs/CommandDTO.cs" />
+        <option value="$PROJECT_DIR$/Data/CommandContext.cs" />
+        <option value="$PROJECT_DIR$/DTOs/CommandReadDto.cs" />
         <option value="$PROJECT_DIR$/Data/ICommanderRepo.cs" />
         <option value="$PROJECT_DIR$/Data/MockCommanderRepo.cs" />
         <option value="$PROJECT_DIR$/Data/SqlCommanderRepo.cs" />
         <option value="$PROJECT_DIR$/DTOs/CommandCreateDto.cs" />
-        <option value="$PROJECT_DIR$/Data/CommandContext.cs" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/Profiles/CommandsProfile.cs" />
+        <option value="$PROJECT_DIR$/DTOs/CommandUpdateDto.cs" />
         <option value="$PROJECT_DIR$/Controllers/CommandsController.cs" />
-        <option value="$PROJECT_DIR$/DTOs/CommandReadDto.cs" />
       </list>
     </option>
   </component>
@@ -123,7 +121,9 @@
       <workItem from="1599650646920" duration="2178000" />
       <workItem from="1599668653235" duration="5801000" />
       <workItem from="1599675480757" duration="336000" />
-      <workItem from="1599713290068" duration="290000" />
+      <workItem from="1599713290068" duration="4660000" />
+      <workItem from="1599723987268" duration="1420000" />
+      <workItem from="1599728435266" duration="3212000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1599638836554</created>
@@ -139,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599654494717</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add POST api">
+      <created>1599713602042</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599713602042</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,10 +202,10 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="100" y="140" width="1720" height="840" key="VCS.FileHistoryDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1599642141774" />
-    <state x="555" y="292" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599654499082">
+    <state x="555" y="292" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599713604824">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="555" y="292" width="800" height="535" key="Vcs.Push.Dialog.v2/0.40.1920.1040@0.40.1920.1040" timestamp="1599654499082" />
+    <state x="555" y="292" width="800" height="535" key="Vcs.Push.Dialog.v2/0.40.1920.1040@0.40.1920.1040" timestamp="1599713604824" />
     <state x="636" y="335" width="672" height="678" key="search.everywhere.popup" timestamp="1599645235921">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>

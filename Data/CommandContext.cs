@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using WebApplication.Models;
 
-namespace WebApplication.Controllers
+namespace WebApplication.Data
 {
     public class CommandContext : DbContext
     {

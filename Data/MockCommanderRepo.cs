@@ -5,6 +5,11 @@ namespace WebApplication.Data
 {
     public class MockCommanderRepo : ICommanderRepo
     {
+        public bool SaveChanges()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public IEnumerable<Command> GetAllCommands()
         {
             var commands = new List<Command>()
@@ -20,6 +25,11 @@ namespace WebApplication.Data
         public Command GetCommandsById(int id)
         {
             return new Command() {Id = 1, HowTo = "Stash the changes in a git repository", Line = "Stash", Platform = "Terminal"};
+        }
+
+        public void CreateCommand(Command command)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

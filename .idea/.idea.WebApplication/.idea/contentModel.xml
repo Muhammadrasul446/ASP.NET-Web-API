@@ -6,10 +6,14 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="Controllers" t="Include">
-        <e p="CommandContext.cs" t="Include" />
         <e p="CommandsController.cs" t="Include" />
       </e>
+      <e p="DTOs" t="Include">
+        <e p="CommandCreateDto.cs" t="Include" />
+        <e p="CommandReadDto.cs" t="Include" />
+      </e>
       <e p="Data" t="Include">
+        <e p="CommandContext.cs" t="Include" />
         <e p="ICommanderRepo.cs" t="Include" />
         <e p="MockCommanderRepo.cs" t="Include" />
         <e p="SqlCommanderRepo.cs" t="Include" />
@@ -21,6 +25,9 @@
       </e>
       <e p="Models" t="Include">
         <e p="Command.cs" t="Include" />
+      </e>
+      <e p="Profiles" t="Include">
+        <e p="CommandsProfile.cs" t="Include" />
       </e>
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">

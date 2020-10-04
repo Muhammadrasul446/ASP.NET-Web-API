@@ -30,7 +30,7 @@ namespace WebApplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<CommandContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("CommanderConnection")));
+            services.AddDbContext<ApiContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("CommanderConnection")));
             
             services.AddControllers().AddNewtonsoftJson(setup =>
             {
@@ -39,7 +39,9 @@ namespace WebApplication
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-            services.AddScoped<ICommanderRepo, SqlCommanderRepo>();
+            services.AddScoped<IRepository, SqlRepository>();
+
+            services.AddSwaggerDocument();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +55,9 @@ namespace WebApplication
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
 
             app.UseAuthorization();
 

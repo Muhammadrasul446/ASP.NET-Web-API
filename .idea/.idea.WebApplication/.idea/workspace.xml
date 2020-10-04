@@ -14,15 +14,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6940c94-bac7-4ebd-a8eb-e2ba96975f0f" name="Default Changelist" comment="Add POST api">
-      <change afterPath="$PROJECT_DIR$/DTOs/CommandUpdateDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/TodoItemsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/TodoItemCreateDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/TodoItemUpdateDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/TodoItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiles/TodoItemsProfile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/CommandsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CommandsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DTOs/CommandCreateDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DTOs/CommandCreateDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/ICommanderRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ICommanderRepo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/MockCommanderRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/MockCommanderRepo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/SqlCommanderRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/SqlCommanderRepo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Profiles/CommandsProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Profiles/CommandsProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CommandsController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DTOs/CommandCreateDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DTOs/CommandReadDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DTOs/CommandUpdateDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/CommandContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ApiContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/ICommanderRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/IRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/MockCommanderRepo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/SqlCommanderRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/SqlRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20200909102042_InitialMigration.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/20200909102042_InitialMigration.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/CommandContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/CommandContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Command.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Profiles/CommandsProfile.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication.csproj" afterDir="false" />
     </list>
@@ -33,6 +43,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AABF22C8-0443-4F75-A371-6B76C765A950/95/IMapper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -48,10 +61,21 @@
         <option value="$PROJECT_DIR$/Data/MockCommanderRepo.cs" />
         <option value="$PROJECT_DIR$/Data/SqlCommanderRepo.cs" />
         <option value="$PROJECT_DIR$/DTOs/CommandCreateDto.cs" />
-        <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/Profiles/CommandsProfile.cs" />
         <option value="$PROJECT_DIR$/DTOs/CommandUpdateDto.cs" />
+        <option value="$PROJECT_DIR$/Models/TodoItem.cs" />
+        <option value="$PROJECT_DIR$/Data/DBContext.cs" />
+        <option value="$PROJECT_DIR$/DTOs/TodoItemReadDto.cs" />
+        <option value="$PROJECT_DIR$/Profiles/TodoItemsProfile.cs" />
+        <option value="$PROJECT_DIR$/DTOs/TodoItemCreateDto.cs" />
+        <option value="$PROJECT_DIR$/Profiles/TodoItemsProfile : Profile.cs" />
+        <option value="$PROJECT_DIR$/DTOs/TodoItemUpdateDto.cs" />
         <option value="$PROJECT_DIR$/Controllers/CommandsController.cs" />
+        <option value="$PROJECT_DIR$/Data/APIContext.cs" />
+        <option value="$PROJECT_DIR$/Data/IRepository.cs" />
+        <option value="$PROJECT_DIR$/Data/SqlRepository.cs" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/Controllers/TodoItemsController.cs" />
       </list>
     </option>
   </component>
@@ -124,6 +148,12 @@
       <workItem from="1599713290068" duration="4660000" />
       <workItem from="1599723987268" duration="1420000" />
       <workItem from="1599728435266" duration="3212000" />
+      <workItem from="1601396021065" duration="566000" />
+      <workItem from="1601487932532" duration="1778000" />
+      <workItem from="1601490299864" duration="1072000" />
+      <workItem from="1601649724154" duration="2083000" />
+      <workItem from="1601653961197" duration="870000" />
+      <workItem from="1601659243096" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1599638836554</created>
@@ -190,18 +220,18 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="1874" height="256" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1599638685656" />
-    <state x="735" y="174" width="440" height="770" key="RiderGenerateDialog" timestamp="1599672004561">
+    <state x="735" y="174" width="440" height="770" key="RiderGenerateDialog" timestamp="1601488311478">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="735" y="174" width="440" height="770" key="RiderGenerateDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1599672004561" />
+    <state x="735" y="174" width="440" height="770" key="RiderGenerateDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1601488311478" />
     <state x="441" y="195" key="SettingsEditor" timestamp="1599643080036">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="441" y="195" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1599643080036" />
-    <state x="100" y="140" width="1720" height="840" key="VCS.FileHistoryDialog" timestamp="1599642141774">
+    <state x="100" y="140" width="1720" height="840" key="VCS.FileHistoryDialog" timestamp="1601490899355">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="100" y="140" width="1720" height="840" key="VCS.FileHistoryDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1599642141774" />
+    <state x="100" y="140" width="1720" height="840" key="VCS.FileHistoryDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1601490899355" />
     <state x="555" y="292" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599713604824">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>

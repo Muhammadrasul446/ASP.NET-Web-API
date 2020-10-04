@@ -6,29 +6,29 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="Controllers" t="Include">
-        <e p="CommandsController.cs" t="Include" />
+        <e p="TodoItemsController.cs" t="Include" />
       </e>
       <e p="DTOs" t="Include">
-        <e p="CommandCreateDto.cs" t="Include" />
-        <e p="CommandReadDto.cs" t="Include" />
-        <e p="CommandUpdateDto.cs" t="Include" />
+        <e p="TodoItemCreateDto.cs" t="Include" />
+        <e p="TodoItemUpdateDto.cs" t="Include" />
       </e>
       <e p="Data" t="Include">
-        <e p="CommandContext.cs" t="Include" />
-        <e p="ICommanderRepo.cs" t="Include" />
-        <e p="MockCommanderRepo.cs" t="Include" />
-        <e p="SqlCommanderRepo.cs" t="Include" />
+        <e p="ApiContext.cs" t="Include" />
+        <e p="IRepository.cs" t="Include" />
+        <e p="SqlRepository.cs" t="Include" />
       </e>
       <e p="Migrations" t="Include">
         <e p="20200909102042_InitialMigration.Designer.cs" t="Include" />
         <e p="20200909102042_InitialMigration.cs" t="Include" />
+        <e p="20200930183406_AddModel.Designer.cs" t="Include" />
+        <e p="20200930183406_AddModel.cs" t="Include" />
         <e p="CommandContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
-        <e p="Command.cs" t="Include" />
+        <e p="TodoItem.cs" t="Include" />
       </e>
       <e p="Profiles" t="Include">
-        <e p="CommandsProfile.cs" t="Include" />
+        <e p="TodoItemsProfile.cs" t="Include" />
       </e>
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
